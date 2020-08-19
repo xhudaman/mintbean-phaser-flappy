@@ -2,19 +2,21 @@
   "name": "mintbean-phaser-flappy",
   "version": "1.0.0",
   "description": "Flappy bird clone built with Phasjer.Js for the August 19, 2020 Mintbean Hackathon",
-  "main": "index.js",
+  "main": "dist/index.html",
   "repository": "git@github.com:xhudaman/mintbean-phaser-flappy.git",
   "author": "Matthew Edell",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.js -p 3000",
-    "build": "parcel build src/index.html",
-    "predeploy": "npm run build",
+    "start": "parcel src/index.*",
+    "build": "parcel build src/index.*",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "@parcel/transformer-css": "^2.0.0-alpha.3",
+    "@parcel/transformer-postcss": "^2.0.0-alpha.3",
     "gh-pages": "^3.1.0",
-    "parcel": "^2.0.0-beta.1"
+    "parcel": "^2.0.0-beta.1",
+    "sass": "^1.26.10"
   },
   "dependencies": {
     "phaser": "3.24.1"
