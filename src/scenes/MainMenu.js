@@ -14,7 +14,7 @@ export default new Phaser.Class({
 
     graphics = this.add.graphics();
     graphics.fillStyle(0x757575, 1);
-    graphics.fillRect(0, 0, 800, 600);
+    graphics.fillRect(0, 0, gameConfig.width, gameConfig.height);
 
     this.add.text(
       gameConfig.width / 2,

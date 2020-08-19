@@ -26,6 +26,10 @@ export default new Phaser.Class({
     );
   },
   update: function() {
+    console.log({ y: character.y });
+    if (character.y < 0 || character.y > gameConfig.height) {
+      this.scene.start("gameOver");
+    }
     const { velocity } = character.body;
     if (cursors.space.isDown && keyPressed === false) {
       keyPressed = true;
