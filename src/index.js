@@ -8,7 +8,7 @@ const config = {
   physics: {
     default: "arcade",
     arcade: {
-      gravity: { y: 100, x: 0 }
+      gravity: { y: 200, x: 0 }
     }
   },
   scene: gameConfig.scene
